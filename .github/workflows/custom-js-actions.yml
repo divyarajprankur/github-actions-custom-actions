@@ -1,0 +1,11 @@
+name: JavaScript_Actions_WF
+on:
+  push:
+    branches:
+      - main
+jobs:
+  information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Custom Action
+        uses: ./.github/actions/deploy-s3-javascript
